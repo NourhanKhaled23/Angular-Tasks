@@ -1,14 +1,14 @@
-#  the NavbarComponent:
-# uses Data binding Types:
+1.the NavbarComponent:
+- uses Data binding Types:
 .Interpolation to display the names of menu items dynamically.
 .Event binding to handle user clicks and respond appropriately.
 
 
-# VacationRequestsComponent :
- # Custom Pipe: HighlightPipe
+2. VacationRequestsComponent :
+ - Custom Pipe: HighlightPipe
    .The HighlightPipe is created to highlight search terms in the name and salary fields.
    
-  # uses Data binding Types:
+  - uses Data binding Types:
   Interpolation:
       .To display dynamic data within the HTML template, such as showing the name of a vacation request,
        It updates automatically when the underlying data changes.
