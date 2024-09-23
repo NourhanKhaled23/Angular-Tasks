@@ -1,23 +1,26 @@
-1.the NavbarComponent:
-- uses Data binding Types:
-.Interpolation to display the names of menu items dynamically.
-.Event binding to handle user clicks and respond appropriately.
+1. NavbarComponent
+Data Binding Types:
+Interpolation:
+Used to dynamically display the names of menu items in the navbar.
+Updates automatically when the underlying data changes.
+Event Binding:
+Handles user clicks on menu items.
+Responds appropriately by executing the onLinkClick() method, allowing for logging or other interactions.
+2. VacationRequestsComponent
+Custom Pipe: HighlightPipe
 
+Purpose:
+Created to highlight search terms within the name and salary fields, enhancing user experience by visually distinguishing relevant information.
+Data Binding Types:
 
-2. VacationRequestsComponent :
- - Custom Pipe: HighlightPipe
-   .The HighlightPipe is created to highlight search terms in the name and salary fields.
-   
-  - uses Data binding Types:
-  Interpolation:
-      .To display dynamic data within the HTML template, such as showing the name of a vacation request,
-       It updates automatically when the underlying data changes.
-  Property Binding:
-     .setting the src attribute of an image. 
-  Event Binding:
-     .To respond to user actions, input events in a search box.(execute functions in response to user interactions, like filtering vacation requests based on 
-      the search input).
-  Two-Way Binding:
-     .synchronize input values directly with component properties, particularly in forms. This allows changes in the input field, a checkbox to be 
-      automaticallyreflected in the component's state and vice versa.
-
+Interpolation:
+Displays dynamic data in the HTML template, such as the name of a vacation request.
+Automatically updates when the underlying data changes.
+Property Binding:
+Sets the src attribute of an image to display employee pictures, ensuring that the correct image is shown based on the component's data.
+Event Binding:
+Responds to user actions, such as input events in the search box.
+Executes functions to filter vacation requests based on the user's search input, allowing for dynamic updates to the displayed list.
+Two-Way Binding:
+Synchronizes input values directly with component properties, especially in forms.
+Changes in an input field (e.g., a checkbox) are automatically reflected in the component's state and vice versa, simplifying data management.
